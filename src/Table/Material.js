@@ -62,9 +62,8 @@ class Material extends React.Component {
                             this.props.data.map((d) => {
                                 const values = []
                                 f.forEach(key => {
-                                    if (d[key].length < 1) {
-                                        d[key] = '----------'
-                                    } else if (typeof d[key] === 'object' || typeof d[key] === 'undefined') {
+                                    
+                                    if (typeof d[key] === 'object' || typeof d[key] === 'undefined') {
 
                                         d[key] = '----------'
 
@@ -72,6 +71,8 @@ class Material extends React.Component {
                                         d[key] = "true"
                                     } else if (d[key] === false) {
                                         d[key] = 'false'
+                                    } else if (d[key].length < 1) {
+                                        d[key] = '----------'
                                     }
                                     
                                     
