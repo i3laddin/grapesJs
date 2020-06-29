@@ -3,8 +3,8 @@ class Material extends React.Component {
     
     render() {
         console.log(this.props.data)
-        const keys = [...new Set([].concat.apply([], this.props.data.map(obj => Object.keys(obj))))]
-        console.log(keys)
+        // const keys = [...new Set([].concat.apply([], this.props.data.map(obj => Object.keys(obj))))]
+        // console.log(keys)
         let f = ''
         for (let i = 0, j = 0; i < this.props.data.length && j < 10; i++, j++) {
 
@@ -44,13 +44,13 @@ class Material extends React.Component {
 
                         }}
                         >
-                            {keys.map((k) => {
-                                console.log(keys.length)
+                            {f.map((k) => {
+                                console.log(f.length)
                                 
                                 return (
                                     <th
                                         style={{
-                                            width:`${100/keys.length}%`,
+                                            width:`${100/f.length}%`,
                                             padding: "15px",
                                         }}>{k}</th>
                                 )
@@ -73,7 +73,7 @@ class Material extends React.Component {
                                         d[key] = 'false'
                                     } else if (d[key].length < 1) {
                                         d[key] = '----------'
-                                    }
+                                    } 
                                     
                                     
                                     values.push(d[key])
@@ -110,7 +110,7 @@ class Material extends React.Component {
                                                 
                                                 <td
                                                     style={{
-                                                    width: `${100 / keys.length}%`,
+                                                    width: `${100 / f.length}%`,
                                                         wordWrap: 'break-word',
                                                         padding: '10px 0',
                                                         
