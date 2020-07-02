@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 axios.defaults.headers = {
-  Authorization: 'B6IES26pZSvpX4J8c8q4wmseASpRtmBOtvXzztH57NDDJXxO94qE7VbtJ7y718GZ'
+  Authorization: 'aKbUDekFAKiWP0Rx4wGY3HdNU7wrbWJvhkrefgyW6pdiWuVCry8izvNHkpFhfG9B'
 }
 
 const APP_URL = 'http://173.249.14.149:3001/api'

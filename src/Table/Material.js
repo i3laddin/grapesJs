@@ -13,32 +13,33 @@ class Material extends React.Component {
             f = kee
         }
         return (
-            <div id="hie" class="datagrid">
                 <table
                     cellspacing="0"
                     cellpadding="0"
                     style={{
-                    margin: "0 20px",
-                    display: "flex",
+                        margin: "20px",
+                        display: "flex",
                     flexDirection: "column",
                     textAlign: "center",
-                    borderRadius: '5px',
-                    fontSize: "25px",
-                    color: "black",
                     tableLayout: 'fixed',
-                    whiteSpace: 'normal'
+                        whiteSpace: 'normal',
+                        borderRadius: '15px',
+                        overflow: 'hidden',
+                        boxShadow: '0 0px 40px 0px rgba(0, 0, 0, 0.15)',
+                        fontSize: '15px',
+                        color: '#808080',
+                    
                 }}>
                     <thead>
                         <tr
                             style={{
+
                                 display: "flex",
                                 flexDirection: "row",
                                 justifyContent: "space-between",
-                                marginTop: "15px",
-                                marginBottom: "15px",
-                                backgroundColor: '#95A5A6',
-                                boxShadow: '0px 0px 9px 0px rgba(0,0,0,0.1)',
-                                borderRadius: "7px"
+                                backgroundColor: '#6c7ae0',
+                            boxShadow: '0px 0px 9px 0px rgba(0,0,0,0.1)',
+                            color: 'white'
 
 
 
@@ -57,7 +58,7 @@ class Material extends React.Component {
                             })}
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody class="Tbody">
                         {
                             this.props.data.map((d) => {
                                 const values = []
@@ -90,20 +91,15 @@ class Material extends React.Component {
                                 //     }
                                 //})
                                 return (
-                                    <tr style={{
+                                    <tr
+                                        class="Tr-body"
+                                        style={{
                                         display: "flex",
                                         flexDirection: "row",
                                         justifyContent: "space-around",
-                                        alignItems:"center",
-                                        marginBottom: "15px",
-                                        boxShadow: '0px 0px 9px 0px rgba(0,0,0,0.1)',
-                                        borderRadius: "7px",
-                                        backgroundColor:"white"
-
-
-
-
-                                    }}>
+                                        alignItems: "center",
+                                        
+                                        }}>
                                         
                                         {values.map((di) => {
                                             return (
@@ -130,7 +126,6 @@ class Material extends React.Component {
                 
                     </tbody>
                 </table>
-            </div>
         );
 
     }

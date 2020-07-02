@@ -13,7 +13,20 @@ bm.remove(TableRef);
       category: c.blockLabel,
       attributes: { class: 'fa fa-table' },
       content: `
-        <div data-gjs-type="${TableRef}"></div>
+        <div class="T" data-gjs-type="${TableRef}"></div>
+        <style>
+        .T {
+              float: left;
+
+        }
+        .Tbody {
+          max-height: 585px;
+          overflow: auto;
+        }
+        .Tbody tr:nth-child(even) {
+        background-color: #f8f6ff;
+      }
+        </style>
       `
     });
   
