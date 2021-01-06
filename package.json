@@ -6,7 +6,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "grapesjs": "^0.16.18",
     "grapesjs-blocks-basic": "^0.1.8",
     "grapesjs-custom-code": "^0.1.3",
